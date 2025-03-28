@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "1ea8083a-ce02-4110-90b7-38fed852fbfc",
+		"name": "API Gateway - Fluxo Caixa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1383249"
+	},
+	"item": [
+		{
+			"name": "Consulta Consolidados Diários",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/fluxo-caixa/consolidados-diarios?comercianteid=12&datainicial=2025-03-25&dataFinal=2025-03-28",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"fluxo-caixa",
+						"consolidados-diarios"
+					],
+					"query": [
+						{
+							"key": "comercianteid",
+							"value": "12"
+						},
+						{
+							"key": "datainicial",
+							"value": "2025-03-25"
+						},
+						{
+							"key": "dataFinal",
+							"value": "2025-03-28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Lançamentos Diários",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/fluxo-caixa/lancamentos-diarios?comercianteid=12&datainicial=2025-03-26&dataFinal=2025-03-28",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"fluxo-caixa",
+						"lancamentos-diarios"
+					],
+					"query": [
+						{
+							"key": "comercianteid",
+							"value": "12"
+						},
+						{
+							"key": "datainicial",
+							"value": "2025-03-26"
+						},
+						{
+							"key": "dataFinal",
+							"value": "2025-03-28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Lançamento Diário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\": \"1\",\r\n    \"valor\": 23.00,\r\n    \"data\": \"2025-03-28\",\r\n    \"dataVencimento\": \"2025-03-28\",\r\n    \"descricao\": \"descricao\",\r\n    \"comercianteId\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/fluxo-caixa/lancamentos-diarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"fluxo-caixa",
+						"lancamentos-diarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Consolidação Diária",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": \"2025-03-25\",\r\n    \"comercianteId\": 5,\r\n    \"saldoInicial\": -167.00,\r\n    \"saldoFinal\": 456.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/fluxo-caixa/consolidados-diarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"fluxo-caixa",
+						"consolidados-diarios"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,78 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  consolidadodiarioapi:
+    build:
+      context: "C:\\projects\\dotnet\\dc-arquiteto\\dc-arquitetura"
+      dockerfile: "ConsolidadoDiarioAPI/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net9.0/ConsolidadoDiarioAPI.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "consolidadodiarioapi:dev"
+    ports: []
+    volumes:
+    - "C:\\projects\\dotnet\\dc-arquiteto\\dc-arquitetura\\ConsolidadoDiarioAPI:/app:rw"
+    - "C:\\projects\\dotnet\\dc-arquiteto\\dc-arquitetura:/src:rw"
+    - "C:\\Users\\jctel_7zprkki\\.nuget\\packages:/home/app/.nuget/packages"
+    working_dir: "/app"
+  consolidadodiarioservicejob:
+    build:
+      context: "C:\\projects\\dotnet\\dc-arquiteto\\dc-arquitetura"
+      dockerfile: "ConsolidadoDiarioServiceJob/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net9.0/ConsolidadoDiarioServiceJob.dll"
+    environment:
+      DOTNET_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "consolidadodiarioservicejob:dev"
+    ports: []
+    volumes:
+    - "C:\\projects\\dotnet\\dc-arquiteto\\dc-arquitetura\\ConsolidadoDiarioServiceJob:/app:rw"
+    - "C:\\projects\\dotnet\\dc-arquiteto\\dc-arquitetura:/src:rw"
+    - "C:\\Users\\jctel_7zprkki\\.nuget\\packages:/home/app/.nuget/packages"
+    working_dir: "/app"
+  controlelancamentoapi:
+    build:
+      context: "C:\\projects\\dotnet\\dc-arquiteto\\dc-arquitetura"
+      dockerfile: "ControleLancamentoAPI/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net9.0/ControleLancamentoAPI.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "controlelancamentoapi:dev"
+    ports: []
+    volumes:
+    - "C:\\projects\\dotnet\\dc-arquiteto\\dc-arquitetura\\ControleLancamentoAPI:/app:rw"
+    - "C:\\projects\\dotnet\\dc-arquiteto\\dc-arquitetura:/src:rw"
+    - "C:\\Users\\jctel_7zprkki\\.nuget\\packages:/home/app/.nuget/packages"
+    working_dir: "/app"
+  gatewayapi:
+    build:
+      context: "C:\\projects\\dotnet\\dc-arquiteto\\dc-arquitetura"
+      dockerfile: "GatewayAPI/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net9.0/GatewayAPI.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "gatewayapi:dev"
+    ports: []
+    volumes:
+    - "C:\\projects\\dotnet\\dc-arquiteto\\dc-arquitetura\\GatewayAPI:/app:rw"
+    - "C:\\projects\\dotnet\\dc-arquiteto\\dc-arquitetura:/src:rw"
+    - "C:\\Users\\jctel_7zprkki\\.nuget\\packages:/home/app/.nuget/packages"
+    working_dir: "/app"

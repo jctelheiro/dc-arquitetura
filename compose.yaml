@@ -1,0 +1,50 @@
+﻿services:
+  postgres:
+    image: postgres:14-alpine
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=fluxocaixa
+    ports:
+      - "5432:5432"
+    volumes:
+      - data-volume:/var/lib/postgresql/data
+  consolidadodiarioservicejob:
+    image: consolidadodiarioservicejob
+    environment:
+      - FLUXOCAIXA_CONNECTION_STRING=Host=postgres;Username=root;Password=secret;Database=fluxocaixa
+      - START_EARLIER_DAYS_PROCESSING=15
+    build:
+      context: .
+      dockerfile: ConsolidadoDiarioServiceJob/Dockerfile
+    depends_on:
+      - postgres
+  controlelancamentoapi:
+    image: controlelancamentoapi
+    build:
+      context: .
+      dockerfile: ControleLancamentoAPI/Dockerfile
+    ports:
+      - "8100:8080"      
+    depends_on:
+      - postgres
+  consolidadodiarioapi:
+    image: consolidadodiarioapi
+    build:
+      context: .
+      dockerfile: ConsolidadoDiarioAPI/Dockerfile
+    ports:
+      - "8000:8080"      
+    depends_on:
+      - postgres
+  gatewayapi:
+    image: gatewayapi
+    build:
+      context: .
+      dockerfile: GatewayAPI/Dockerfile
+    ports:
+      - "5000:8080"      
+    depends_on:
+      - postgres
+volumes:
+    data-volume:

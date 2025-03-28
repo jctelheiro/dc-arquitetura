@@ -1,0 +1,16 @@
+@ControleLancamentoAPI_HostAddress = https://localhost:7261/v1/lancamentosdiarios
+
+###Cria um registro de lançamento diário
+POST {{ControleLancamentoAPI_HostAddress}}/v1/lancamentosdiarios
+Content-Type: application/json
+
+{
+  "tipo": 2,
+  "valor": 11.00,
+  "data": "2025-03-25",
+  "dataVencimento": "2025-03-26",
+  "descricao": "teste de lançamento 2",
+  "comercianteId": 12
+}
+
+

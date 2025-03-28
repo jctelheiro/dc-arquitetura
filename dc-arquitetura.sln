@@ -1,0 +1,103 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleLancamentoAPI", "ControleLancamentoAPI\ControleLancamentoAPI.csproj", "{672B3C5C-0C55-4393-93D0-0B4F0458ABB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B3F0D06D-D3EB-4AE1-90A8-C7BC38A0D084}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolidadoDiarioAPI", "ConsolidadoDiarioAPI\ConsolidadoDiarioAPI.csproj", "{310A6539-E6AA-4470-A5C6-93CA14434A9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoCaixaContext", "FluxoCaixaContext\FluxoCaixaContext.csproj", "{397D67E6-E951-411A-B219-0410368A47A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{7FBE7C24-5B54-41A7-89D2-3986059C89DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{481BE688-3A7B-4B19-97E0-D2DA8812850A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{F640DC66-FC4D-48D4-B601-93DEAC23CD2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayAPI", "GatewayAPI\GatewayAPI.csproj", "{6FEE39EE-2222-4865-A7C7-91503B2DBA3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolidadoDiarioServiceJob", "ConsolidadoDiarioServiceJob\ConsolidadoDiarioServiceJob.csproj", "{46E5E1F4-FCEE-4507-8F12-D9B0E2FF936D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{33F907EB-FDB1-48D9-B207-4FF024F0920F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolidadoDiarioAPITests", "ConsolidadoDiarioAPITests\ConsolidadoDiarioAPITests.csproj", "{8C380EEB-22AD-4C36-A170-730D12FA59F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleLancamentoAPITests", "ControleLancamentoAPITests\ControleLancamentoAPITests.csproj", "{33BFABA8-25BF-4DEA-B610-AA1DF34B9D70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolidadoDiarioServiceJobTests", "ConsolidadoDiarioServiceJobTests\ConsolidadoDiarioServiceJobTests.csproj", "{093BBCB3-1A13-419A-97BE-A66F18CEC98E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{5530E1B1-7E9B-4D2B-8988-8E4919C53181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{9F1139BC-7E98-4EA3-9018-6FCD373AA7F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationTests", "IntegrationTests", "{AEC9B241-FC70-46AE-999D-C436D799E641}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentos", "Documentos", "{BDA7F447-5263-4B52-AA3F-E5E6FB31141C}"
+	ProjectSection(SolutionItems) = preProject
+		dc-arquitetura.jpg = dc-arquitetura.jpg
+		Descritivo-Tecnico.pdf = Descritivo-Tecnico.pdf
+		SolucaoArquiteturaTecnica.md = SolucaoArquiteturaTecnica.md
+		API Gateway - Fluxo Caixa.postman_collection.json = API Gateway - Fluxo Caixa.postman_collection.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{672B3C5C-0C55-4393-93D0-0B4F0458ABB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{672B3C5C-0C55-4393-93D0-0B4F0458ABB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{672B3C5C-0C55-4393-93D0-0B4F0458ABB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{672B3C5C-0C55-4393-93D0-0B4F0458ABB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{310A6539-E6AA-4470-A5C6-93CA14434A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{310A6539-E6AA-4470-A5C6-93CA14434A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{310A6539-E6AA-4470-A5C6-93CA14434A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{310A6539-E6AA-4470-A5C6-93CA14434A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397D67E6-E951-411A-B219-0410368A47A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397D67E6-E951-411A-B219-0410368A47A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397D67E6-E951-411A-B219-0410368A47A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397D67E6-E951-411A-B219-0410368A47A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FEE39EE-2222-4865-A7C7-91503B2DBA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FEE39EE-2222-4865-A7C7-91503B2DBA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FEE39EE-2222-4865-A7C7-91503B2DBA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FEE39EE-2222-4865-A7C7-91503B2DBA3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E5E1F4-FCEE-4507-8F12-D9B0E2FF936D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E5E1F4-FCEE-4507-8F12-D9B0E2FF936D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E5E1F4-FCEE-4507-8F12-D9B0E2FF936D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E5E1F4-FCEE-4507-8F12-D9B0E2FF936D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C380EEB-22AD-4C36-A170-730D12FA59F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C380EEB-22AD-4C36-A170-730D12FA59F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C380EEB-22AD-4C36-A170-730D12FA59F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C380EEB-22AD-4C36-A170-730D12FA59F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33BFABA8-25BF-4DEA-B610-AA1DF34B9D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33BFABA8-25BF-4DEA-B610-AA1DF34B9D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33BFABA8-25BF-4DEA-B610-AA1DF34B9D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33BFABA8-25BF-4DEA-B610-AA1DF34B9D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093BBCB3-1A13-419A-97BE-A66F18CEC98E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093BBCB3-1A13-419A-97BE-A66F18CEC98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093BBCB3-1A13-419A-97BE-A66F18CEC98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093BBCB3-1A13-419A-97BE-A66F18CEC98E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F1139BC-7E98-4EA3-9018-6FCD373AA7F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F1139BC-7E98-4EA3-9018-6FCD373AA7F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F1139BC-7E98-4EA3-9018-6FCD373AA7F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F1139BC-7E98-4EA3-9018-6FCD373AA7F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{397D67E6-E951-411A-B219-0410368A47A2} = {7FBE7C24-5B54-41A7-89D2-3986059C89DC}
+		{310A6539-E6AA-4470-A5C6-93CA14434A9D} = {481BE688-3A7B-4B19-97E0-D2DA8812850A}
+		{672B3C5C-0C55-4393-93D0-0B4F0458ABB0} = {481BE688-3A7B-4B19-97E0-D2DA8812850A}
+		{6FEE39EE-2222-4865-A7C7-91503B2DBA3F} = {F640DC66-FC4D-48D4-B601-93DEAC23CD2C}
+		{46E5E1F4-FCEE-4507-8F12-D9B0E2FF936D} = {481BE688-3A7B-4B19-97E0-D2DA8812850A}
+		{5530E1B1-7E9B-4D2B-8988-8E4919C53181} = {33F907EB-FDB1-48D9-B207-4FF024F0920F}
+		{8C380EEB-22AD-4C36-A170-730D12FA59F0} = {5530E1B1-7E9B-4D2B-8988-8E4919C53181}
+		{33BFABA8-25BF-4DEA-B610-AA1DF34B9D70} = {5530E1B1-7E9B-4D2B-8988-8E4919C53181}
+		{9F1139BC-7E98-4EA3-9018-6FCD373AA7F6} = {5530E1B1-7E9B-4D2B-8988-8E4919C53181}
+		{AEC9B241-FC70-46AE-999D-C436D799E641} = {33F907EB-FDB1-48D9-B207-4FF024F0920F}
+		{093BBCB3-1A13-419A-97BE-A66F18CEC98E} = {AEC9B241-FC70-46AE-999D-C436D799E641}
+	EndGlobalSection
+EndGlobal

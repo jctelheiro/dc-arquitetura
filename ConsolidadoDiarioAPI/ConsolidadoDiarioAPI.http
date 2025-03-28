@@ -1,0 +1,13 @@
+@ConsolidadoDiarioAPI_HostAddress = https://localhost:7099
+
+### Cria um registro consolidado diário
+POST {{ConsolidadoDiarioAPI_HostAddress}}/v1/consolidadosdiarios
+Content-Type: application/json
+
+{
+  "data": "2025-03-23",
+  "comercianteId": 12,
+  "saldoInicial": 15.00,
+  "saldoFinal": -167.00
+}
+
