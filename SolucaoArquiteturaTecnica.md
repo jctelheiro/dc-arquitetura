@@ -101,6 +101,8 @@ Como não tinha informações sobre volume, carga e outras necessidades optei po
 
     * Utilizar Kubernetes ou Kubernetes gerenciado em CLoud ou similiar.
 
+    * Utilizar banco de dados NoSQL. Pode ser muito útil para aplicar o CAP teorema no particionamento e distribuição de dados com volume alto.
+
     * Possibilidade de utilizar um API Gateway mais robusto, mas deve se atentar ao custo e complexidade.
 
     * Evoluir para microservices, mas para isto se deve pensar muitas vezes...rsrs
